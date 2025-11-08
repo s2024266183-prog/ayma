@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>form practice</title>
+  <style>
+    table,th,td{
+     border:1px solid black;
+     border-collapse: collapse;
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>heading 1</h1>
-    <br>
-    <h2>heading 2</h2>
     <hr>
-  
-    <p>Lorem ipsum dolor sit <b>testing123</b> amet consectetur adipisicing elit. Cum natus fugiat <i>ayma</i> asperiores consectetur <u>testing1</u> rerum <mark>testing2</mark> quidem. Alias debitis ea <strong>testing3</strong> veniam saepe <sub>testing4</sub> neque tempore <sup>testing5</sup> quos obcaecati quidem illo, minus ad molestiae nihil!</p>
-   <a href="https://www.google.com"
-     target="_blank" >visit google</a>
+    <br>
+    <button>click me</button>
+    <a href="index.html"><button>first page</button></a>
+   
+    <form action=""method="get">
+        <label for="fname">first name</label>
+        <input type="text"name="fname"id="fname" 
+        placeholder="enter frst name"></br>
+        <label for="lname">last name</label>
+        <input type="text" name="lname"id="lname"
+        placeholder="enter last name"></br>
+        <label for="gender">male</label>
+        <input type="checkbox" name="gender"id="gender">
+        <label for="gender">female</label>
+        <input type="checkbox" name="gender"id="gender">
+    </br>
+    <label for="email">email:</label>
+    <input type="email" name="email"id="email"
+    placeholder="enter your email"></br>
+    <label for="file">file:</label>
+    <input type="file" name="file"id="file"
+    placeholder="enter file"></br>
+    <label for="number">number:</label>
+    <input type="number" name="number"id="number"
+    placeholder="enter number"></br>
+    <label for="month">month:</label>
+    <input type="month" name="month"id="month"
+    placeholder="enter month"></br>
 
-     <img src="./Capture.PNG" alt="UMT main page"
-     width="300px">
-     <audio src="" controls autoplay muted></audio>
-     <video src="./From KlickPin CF Turning Pins into Paychecks How to Make Money on Pinterest - Meagan Williamson _ Make money from pinterest How to make money Way to make money.mp4"></video>
-     <p>Lorem ipsum dolor sit amet.<p>
-        <p>Lorem ipsum dolor sit amet.<p>
-        <br>
-        <p>Lorem ipsum dolor sit amet.<p>
-        <p>Lorem ipsum dolor sit amet.<p> 
-            <pre>
-
-            </pre>
-            <ol type="i">
-                <li>html</li>
-                <li>css</li>
-                <li>java</li>
-            </ol>
-            <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>java</li>
-            </ul>
-            <table>
-                <tr>
-                    <th>name</th>
-                    <th>email</th>  
-                </tr>
-            <tr>
-                <td>ayma</td>
-                <td>ayma@gmail.com</td>
-            </tr>
-            <tr>
-                <td>ali</td>
-                <td>ali@gmail.com</td>
-            </tr>
-            <table>
-    </body>
+    <input type="sumbit"value="sumbit">
+    </form>
+    <h1>heading 1</h1>
+    <h2 id="myid">heading 2</h2>
+    <h3 class=" myclass">heading 3</h3>
+    <table style="border: 1px solid black;">
+        <tr>
+           <th>name</th>
+           <th>email</th>
+        </tr>
+        <tr>
+            <th>ayma</th>
+            <th>ayma@gmail</th>
+        </tr>
+        <tr>
+            <th>ali</th>
+            <th>ali@gmail</th>
+        </tr>
+       
+     
+    </table>
+    
+    
+</body>
 </html>
