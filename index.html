@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>form practice</title>
-  <style>
-    table,th,td{
-     border:1px solid black;
-     border-collapse: collapse;
+<meta charset="UTF-8">
+<title>Grid Template Areas with Containers</title>
+<style>
+.container {
+display: grid;
+grid-template-areas:
+"header header header"
+"sidebar section1 section1"
+"sidebar section2 section3"
+"footer footer footer";
+
+grid-template-columns: 200px 1fr 1fr;
+grid-gap: 20px;
+width: 85%;
+margin: 50px auto;
 }
-  </style>
-  <link rel="stylesheet" href="style.css">
+.header {
+grid-area: header;
+background: #5cff8d;
+padding: 25px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.sidebar {
+grid-area: sidebar;
+background: #2fd09a65;
+padding: 25px;
+min-height: 350px;
+color: #000000;
+text-align: center;
+}
+
+.section1 {
+grid-area: section1;
+background: #ff4343;
+padding: 25px;
+text-align: center;
+}
+
+.section2 {
+grid-area: section2;
+background: #d2ff55;
+padding: 25px;
+text-align: center;
+}
+
+.section3 {
+grid-area: section3;
+background: #ffb17d;
+padding: 25px;
+text-align: center;
+}
+
+.footer {
+grid-area: footer;
+background: #9b79ff77;
+padding: 25px;
+text-align: center;
+color: rgb(255, 255, 255);
+}
+
+</style>
 </head>
 <body>
-    <hr>
-    <br>
-    <button>click me</button>
-    <a href="index.html"><button>first page</button></a>
-   
-    <form action=""method="get">
-        <label for="fname">first name</label>
-        <input type="text"name="fname"id="fname" 
-        placeholder="enter frst name"></br>
-        <label for="lname">last name</label>
-        <input type="text" name="lname"id="lname"
-        placeholder="enter last name"></br>
-        <label for="gender">male</label>
-        <input type="checkbox" name="gender"id="gender">
-        <label for="gender">female</label>
-        <input type="checkbox" name="gender"id="gender">
-    </br>
-    <label for="email">email:</label>
-    <input type="email" name="email"id="email"
-    placeholder="enter your email"></br>
-    <label for="file">file:</label>
-    <input type="file" name="file"id="file"
-    placeholder="enter file"></br>
-    <label for="number">number:</label>
-    <input type="number" name="number"id="number"
-    placeholder="enter number"></br>
-    <label for="month">month:</label>
-    <input type="month" name="month"id="month"
-    placeholder="enter month"></br>
 
-    <input type="sumbit"value="sumbit">
-    </form>
-    <h1>heading 1</h1>
-    <h2 id="myid">heading 2</h2>
-    <h3 class=" myclass">heading 3</h3>
-    <table style="border: 1px solid black;">
-        <tr>
-           <th>name</th>
-           <th>email</th>
-        </tr>
-        <tr>
-            <th>ayma</th>
-            <th>ayma@gmail</th>
-        </tr>
-        <tr>
-            <th>ali</th>
-            <th>ali@gmail</th>
-        </tr>
-       
-     
-    </table>
-    
-    
+<div class="container">
+
+<div class="header">Header</div>
+
+<div class="sidebar">Sidebar</div>
+
+<div class="section1">section-1</div>
+
+<div class="section2">section-2</div>
+
+<div class="section3">section-3</div>
+
+<div class="footer">Footer</div>
+
+</div>
+
 </body>
 </html>
